@@ -16,10 +16,27 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.dhesigan.FinanceApp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "scheme": "financeapp",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow this app to record audio excuses."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "ecb1dd17-081d-4fec-be11-79c3df57bdc7"
+      }
     }
   }
 }
